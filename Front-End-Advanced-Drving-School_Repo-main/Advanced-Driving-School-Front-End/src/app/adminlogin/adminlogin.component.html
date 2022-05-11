@@ -1,0 +1,43 @@
+<div class="jumbotron" style="background-image: url('https://freestateworld.co.za/wp-content/uploads/2021/07/What-is-Defensive-Driving-Hero.jpg');  background-size: 100% ; "   >
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 offset-md-3">
+                <h2>Admin Login</h2>
+                <form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+                    <div class="form-group">
+                        <label>Enter Username:</label>
+                        <input type="text" placeholder="Username" [(ngModel)]="admin.aname" id="aname" formControlName="aname" class="form-control"
+                            [ngClass]="{'is-invalid':submitted && f['aname'].errors}">
+
+                        <div *ngIf="submitted && f['aname'].errors" class="invalid-feedback">
+                            <div *ngIf="f['aname'].errors['required']" style="color: red;">
+                                Username Required!
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="form-group">
+                        <label>Enter Password:</label>
+                        <input type="password" placeholder="Password" [(ngModel)]="admin.apassword" id="apassword" formControlName="apassword" class="form-control"
+                            [ngClass]="{'is-invalid':submitted && f['apassword'].errors}">
+
+                        <div *ngIf="submitted && f['apassword'].errors" class="invalid-feedback">
+                            <div *ngIf="f['apassword'].errors['required']" style="color: red;">
+                                Password Required!
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="form-group">
+                        <button class="btn btn-primary" id="lbutton">Login</button>
+                    </div>
+                    
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div *ngIf="a===false;">
+    <h5 style=" color: red; text-align: center; font-family: Verdana, Geneva, Tahoma, sans-serif"> Invalid Credentials, please try again </h5>
+</div>

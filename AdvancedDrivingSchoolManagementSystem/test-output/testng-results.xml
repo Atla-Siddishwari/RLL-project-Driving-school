@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="9" passed="9" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2022-05-09T13:22:19 IST" name="Default suite" finished-at="2022-05-09T13:22:55 IST" duration-ms="36030">
+    <groups>
+      <group name="DrivingSchool">
+        <method signature="DrivingSchoolTestStudent.launchDrivingSchool()[pri:0, instance:com.drivingschool.DrivingSchoolTestStudent@30f842ca]" name="launchDrivingSchool" class="com.drivingschool.DrivingSchoolTestStudent"/>
+        <method signature="DrivingSchoolTestStudent.clicklogin()[pri:0, instance:com.drivingschool.DrivingSchoolTestStudent@30f842ca]" name="clicklogin" class="com.drivingschool.DrivingSchoolTestStudent"/>
+        <method signature="DrivingSchoolTestStudent.registerstudent()[pri:0, instance:com.drivingschool.DrivingSchoolTestStudent@30f842ca]" name="registerstudent" class="com.drivingschool.DrivingSchoolTestStudent"/>
+        <method signature="DrivingSchoolTestStudent.login()[pri:0, instance:com.drivingschool.DrivingSchoolTestStudent@30f842ca]" name="login" class="com.drivingschool.DrivingSchoolTestStudent"/>
+        <method signature="DrivingSchoolTestStudent.choosepackage()[pri:0, instance:com.drivingschool.DrivingSchoolTestStudent@30f842ca]" name="choosepackage" class="com.drivingschool.DrivingSchoolTestStudent"/>
+        <method signature="DrivingSchoolTestStudent.choosepackagelocation()[pri:0, instance:com.drivingschool.DrivingSchoolTestStudent@30f842ca]" name="choosepackagelocation" class="com.drivingschool.DrivingSchoolTestStudent"/>
+        <method signature="DrivingSchoolTestStudent.changepwd()[pri:0, instance:com.drivingschool.DrivingSchoolTestStudent@30f842ca]" name="changepwd" class="com.drivingschool.DrivingSchoolTestStudent"/>
+        <method signature="DrivingSchoolTestStudent.loginagain()[pri:0, instance:com.drivingschool.DrivingSchoolTestStudent@30f842ca]" name="loginagain" class="com.drivingschool.DrivingSchoolTestStudent"/>
+        <method signature="DrivingSchoolTestStudent.logout()[pri:0, instance:com.drivingschool.DrivingSchoolTestStudent@30f842ca]" name="logout" class="com.drivingschool.DrivingSchoolTestStudent"/>
+      </group> <!-- DrivingSchool -->
+    </groups>
+    <test started-at="2022-05-09T13:22:19 IST" name="Default test" finished-at="2022-05-09T13:22:55 IST" duration-ms="36030">
+      <class name="com.drivingschool.DrivingSchoolTestStudent">
+        <test-method signature="launchDrivingSchool()[pri:0, instance:com.drivingschool.DrivingSchoolTestStudent@30f842ca]" started-at="2022-05-09T13:22:19 IST" name="launchDrivingSchool" finished-at="2022-05-09T13:22:26 IST" duration-ms="7150" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchDrivingSchool -->
+        <test-method signature="clicklogin()[pri:0, instance:com.drivingschool.DrivingSchoolTestStudent@30f842ca]" started-at="2022-05-09T13:22:26 IST" name="clicklogin" finished-at="2022-05-09T13:22:26 IST" depends-on-methods="com.drivingschool.DrivingSchoolTestStudent.launchDrivingSchool" duration-ms="222" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clicklogin -->
+        <test-method signature="registerstudent()[pri:0, instance:com.drivingschool.DrivingSchoolTestStudent@30f842ca]" started-at="2022-05-09T13:22:26 IST" name="registerstudent" finished-at="2022-05-09T13:22:32 IST" depends-on-methods="com.drivingschool.DrivingSchoolTestStudent.clicklogin" duration-ms="6108" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- registerstudent -->
+        <test-method signature="login()[pri:0, instance:com.drivingschool.DrivingSchoolTestStudent@30f842ca]" started-at="2022-05-09T13:22:32 IST" name="login" finished-at="2022-05-09T13:22:38 IST" depends-on-methods="com.drivingschool.DrivingSchoolTestStudent.registerstudent" duration-ms="5614" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method signature="choosepackage()[pri:0, instance:com.drivingschool.DrivingSchoolTestStudent@30f842ca]" started-at="2022-05-09T13:22:38 IST" name="choosepackage" finished-at="2022-05-09T13:22:38 IST" depends-on-methods="com.drivingschool.DrivingSchoolTestStudent.login" duration-ms="139" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- choosepackage -->
+        <test-method signature="choosepackagelocation()[pri:0, instance:com.drivingschool.DrivingSchoolTestStudent@30f842ca]" started-at="2022-05-09T13:22:38 IST" name="choosepackagelocation" finished-at="2022-05-09T13:22:43 IST" depends-on-methods="com.drivingschool.DrivingSchoolTestStudent.choosepackage" duration-ms="5462" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- choosepackagelocation -->
+        <test-method signature="changepwd()[pri:0, instance:com.drivingschool.DrivingSchoolTestStudent@30f842ca]" started-at="2022-05-09T13:22:43 IST" name="changepwd" finished-at="2022-05-09T13:22:49 IST" depends-on-methods="com.drivingschool.DrivingSchoolTestStudent.choosepackagelocation" duration-ms="5533" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- changepwd -->
+        <test-method signature="loginagain()[pri:0, instance:com.drivingschool.DrivingSchoolTestStudent@30f842ca]" started-at="2022-05-09T13:22:49 IST" name="loginagain" finished-at="2022-05-09T13:22:55 IST" depends-on-methods="com.drivingschool.DrivingSchoolTestStudent.changepwd" duration-ms="5545" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginagain -->
+        <test-method signature="logout()[pri:0, instance:com.drivingschool.DrivingSchoolTestStudent@30f842ca]" started-at="2022-05-09T13:22:55 IST" name="logout" finished-at="2022-05-09T13:22:55 IST" depends-on-methods="com.drivingschool.DrivingSchoolTestStudent.loginagain" duration-ms="132" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logout -->
+      </class> <!-- com.drivingschool.DrivingSchoolTestStudent -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

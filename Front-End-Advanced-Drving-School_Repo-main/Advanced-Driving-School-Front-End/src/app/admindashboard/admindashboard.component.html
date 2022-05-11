@@ -1,0 +1,28 @@
+
+
+ <div style="text-align: center;" >
+    <h2 style="background-color: rgba(164, 170, 172, 0); text-align: center; font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif"> <span style="color: rgb(251, 6, 6);"> A</span>dmin <span style="color: rgb(251, 11, 11);">D</span>ashboard</h2>
+</div> 
+
+<div data-spy="scroll" data-target=".navbar">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a routerLink="adminlist" class="nav-link">Admin List</a>
+            </li>
+            <li class="nav-item">
+                <a routerLink="studentlist" class="nav-link">Student List</a>
+            </li>
+            <li class="nav-item">
+                <a routerLink="packdetails" class="nav-link">Package Details</a>
+            </li>
+            <li class="nav-item">
+                <a routerLink="changepwdadmin" class="nav-link">Change Password</a>
+            </li>
+            <li class="nav-item">
+                <a routerLink="adminlogout" class="nav-link">Logout</a>
+            </li>
+        </ul>
+    </nav>
+</div>
+<router-outlet></router-outlet>

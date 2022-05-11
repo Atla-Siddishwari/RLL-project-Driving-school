@@ -1,0 +1,49 @@
+<div class="jumbotron" style="background-image: url('https://speechling.com/blog/content/images/size/w2000/2019/06/Commuter.jpg');  background-size: 100% auto  "  >
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 offset-md-3">
+                <h2>Student Login</h2>
+                <form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+                    <div class="form-group">
+                        <label>Enter Username:</label>
+                        <input type="text" placeholder="Username" [(ngModel)]="student.sname" id="sname" formControlName="sname" class="form-control"
+                            [ngClass]="{'is-invalid':submitted && f['sname'].errors}">
+
+                        <div *ngIf="submitted && f['sname'].errors" class="invalid-feedback">
+                            <div *ngIf="f['sname'].errors['required']" style="color: red;">
+                                Username Required!
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="form-group">
+                        <label>Enter Password:</label>
+                        <input type="password" placeholder="Password" [(ngModel)]="student.spassword" id="spassword" formControlName="spassword" class="form-control"
+                            [ngClass]="{'is-invalid':submitted && f['spassword'].errors}">
+
+                        <div *ngIf="submitted && f['spassword'].errors" class="invalid-feedback">
+                            <div *ngIf="f['spassword'].errors['required']" style="color: red;">
+                                Password Required!
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="form-group">
+                        <button class="btn btn-primary" id="slogin">Login</button>
+                    </div>
+                    
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div *ngIf="a===false;">
+    <h5 style=" color: rgb(255, 0, 0); text-align: center; font-family: Verdana, Geneva, Tahoma, sans-serif"> Invalid credentials, please try again </h5>
+</div>
+
+<div style="text-align: center; font-size: large; background-color: rgba(18, 17, 17, 0); font-family: Georgia, 'Times New Roman', Times, serif;">
+    <a style="color: black;" routerLink ="studreg">New User? Click here to register</a>
+    <router-outlet></router-outlet>
+</div>
+<hr>

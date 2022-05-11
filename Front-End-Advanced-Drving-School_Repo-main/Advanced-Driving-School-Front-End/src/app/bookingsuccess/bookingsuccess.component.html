@@ -1,0 +1,32 @@
+<h2 style=" background-color: antiquewhite; color: rgb(0, 0, 0); text-align: center; font-family: Verdana, Geneva, Tahoma, sans-serif"> <span style="color: rgb(255, 0, 0);" >B</span>ooking <span style="color: rgb(255, 0, 0);" >D</span>etails</h2>
+<hr>
+<div style="text-align: center;">
+    <table class="table table-dark table-striped table-bordered">
+        <thead>
+            <tr>
+                <th>Student UserName</th>
+                <th>Student Age</th>
+                <th>Student Location</th>
+                <th>Package Name</th>
+                <th>Starting Date</th>
+                <th>Package Vehicle</th>
+                <th>Trainer Name</th>
+                <th>Trainer Location</th>
+                <th>Trainer Experience(in years)</th>
+            </tr>
+        </thead>
+        <tbody class="container-fluid">
+            <tr *ngFor="let s of students">
+                <td *ngFor="let i of s.split(',')">{{i}}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+<br>
+<br>
+<h3 style="background-color: rgb(255, 255, 255); text-align: center; font-family: Georgia, 
+'Times New Roman', Times, serif;">Package booking done successfully!</h3>
+<div style="text-align: center; font-size: large;  background-color: rgb(255, 255, 255); font-family: Verdana, Geneva, Tahoma, sans-serif;">
+    <a routerLink="/studentlogin/studdash" style="color: coral;" >Click here to go back to dashboard</a>
+</div>
+    <router-outlet></router-outlet>
